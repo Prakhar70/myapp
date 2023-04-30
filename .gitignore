@@ -1,0 +1,27 @@
+# Ignore virtual environment
+venv/
+
+# Ignore database file (SQLite)
+*.sqlite3
+
+# Ignore secret settings file (if applicable)
+secrets.py
+
+# Ignore static files (generated during development or deployment)
+/static/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files or directories
+*.tmp
+/tmp/
+
+# Ignore IDE or editor-specific files (example: Visual Studio Code)
+.vscode/
+
+# Ignore PyCharm project files
+.idea/
+
+# Ignore macOS specific files
+.DS_Store
