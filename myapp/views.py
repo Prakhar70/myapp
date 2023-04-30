@@ -1,13 +1,15 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("<h1>Index<h1>")
+def home(request):
+    
+    return render(request,"home.html",{})
 
 def about(request):
-    return HttpResponse("<h1>About<h1>")
+
+    return render(request,"about.html",{})
 
 def service(request):
-    return HttpResponse("<h1>Service<h1>")
 
-def career(request):
-    return HttpResponse("<h1>career<h1>")
+    return render(request,"services.html",{})
+
