@@ -3,8 +3,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home(request):
+    
     date=datetime.datetime.now()
     isActive=True
+    if request.method=='POST':
+        check = request.POST.get('check')
+        if check==None:
+            isActive=False
     name="LearnCodeWithPrakhar"
     list_of_programs=[
         'WAP to check even or odd',
