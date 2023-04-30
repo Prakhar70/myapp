@@ -8,3 +8,6 @@ def about(request):
 
 def service(request):
     return HttpResponse("<h1>Service<h1>")
+
+def career(request):
+    return HttpResponse("<h1>career<h1>")
